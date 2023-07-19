@@ -3,39 +3,145 @@
 
 <head>
   <meta charset="utf-8">
-  <title></title>
+  <title>Layout</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <meta property="og:title" content="">
-  <meta property="og:type" content="">
-  <meta property="og:url" content="">
-  <meta property="og:image" content="">
-
   <link rel="manifest" href="site.webmanifest">
   <link rel="apple-touch-icon" href="icon.png">
-  <!-- Place favicon.ico in the root directory -->
-
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
-
+  <link rel="stylesheet" href="fonts/fonts.css">
   <meta name="theme-color" content="#fafafa">
 </head>
 
 <body>
-
-  <!-- Add your site or application content here -->
-  <p>Hello world! This is HTML5 Boilerplate.</p>
-  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
-  <script src="js/plugins.js"></script>
-  <script src="js/main.js"></script>
-
-  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-  <script>
-    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
-    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
-  </script>
-  <script src="https://www.google-analytics.com/analytics.js" async></script>
+<div class="top">
+  <div class="container">
+    <div class="top__languages-block">
+      <div class="top__language top__language_selected">Ru</div>
+      <div class="top__language">En</div>
+    </div>
+    <div class="top__content-flex-box">
+      <div class="top__phone-image-container">
+        <img src="/img/top_phone.png" alt="phone" class="top__phone-image">
+      </div>
+      <div class="top__left-content">
+        <div class="top__logo">
+          <div class="top__logo-fin">Fin</div>
+          <div class="top__logo-kit">Kit</div>
+        </div>
+        <div class="top__text text">
+          Гибкая мобильная платформа для быстрой реализации инвестиционных сервисов.
+        </div>
+        <button class="top__demo-button button">Заказать демо</button>
+      </div>
+    </div>
+      <div class="top__cards cards">
+        <div class="card">
+          <div class="card__img-container">
+            <img src="./img/icons/Graph.svg" alt="card-image" class="card-img">
+          </div>
+          <div class="text card__text">
+            Удобный пользовательский интерфейс
+          </div>
+        </div>
+        <div class="card">
+          <div class="card__img-container">
+            <img src="./img/icons/Activity.svg" alt="card-image" class="card-img">
+          </div>
+          <div class="text card__text">
+            Панель администратора для ведения учета
+          </div>
+        </div>
+        <div class="card">
+          <div class="card__img-container">
+            <img src="./img/icons/Filter.svg" alt="card-image" class="card-img">
+          </div>
+          <div class="text card__text">
+            Простая<span class="br-span"></span> и быстрая
+            интеграция
+          </div>
+        </div>
+        <div class="card">
+          <div class="card__img-container">
+            <img src="./img/icons/Setting.svg" alt="card-image" class="card-img">
+          </div>
+          <div class="text card__text">
+            Гибкая масштабируемая
+            система
+          </div>
+        </div>
+    </div>
+  </div>
+</div>
+<div class="bottom">
+  <div class="container">
+    <h3 class="bottom__header">
+      Наши <span class="bottom__header_blue">ключевые продукты</span> для инвестиций
+    </h3>
+    <div class="bottom__blue-cards">
+      <div class="bottom__blue-card">
+        <div class="bottom__blue-card-text-container">
+          <h4 class="bottom__blue-card-header">Платформа для автоследования</h4>
+          <div class="bottom__blue-card-text text">Копирование стратегий<span class="br-span br-span_blue-card"></span> в автономном режиме</div>
+        </div>
+        <img src="./img/blue_card_img_2.png" alt="phone-image" class="bottom__blue-card-img">
+      </div>
+      <div class="bottom__blue-card">
+        <div class="bottom__blue-card-text-container">
+          <h4 class="bottom__blue-card-header">Платформа для робо-эдвайзинга</h4>
+          <div class="bottom__blue-card-text text">Персонализированный подбор стратегий исходя из заданных параметров</div>
+        </div>
+        <img src="./img/blue_card_img_1.png" alt="phone-image" class="bottom__blue-card-img">
+      </div>
+    </div>
+    <div class="bottom__flex-box">
+      <div class="bottom__left-content">
+        <h3 class="bottom__header bottom__left-content-header">
+          <span class="bottom__header_blue">Представляем ценность</span><br> для броĸера и банĸа
+        </h3>
+        <div class="text bottom__broker-text">
+          Мы помогаем броĸерам и банĸам запустить собственное мобильное приложение для инвестиций в ĸоротĸие сроĸи и с эĸономией бюджета
+        </div>
+        <button class="bottom__demo-button button">Заказать демо</button>
+      </div>
+      <div class="bottom__cards cards">
+        <div class="card bottom__card">
+          <div class="card__img-container bottom__card-img-container">
+            <img src="./img/icons/money.svg" alt="card-image" class="card-img bottom__card-img">
+          </div>
+          <div class="text card__text bottom__card-text">
+            Эĸономим время и деньги на запусĸ digital сервисов
+          </div>
+        </div>
+        <div class="card bottom__card">
+          <div class="card__img-container bottom__card-img-container">
+            <img src="./img/icons/user-round.svg" alt="card-image" class="card-img bottom__card-img">
+          </div>
+          <div class="text card__text bottom__card-text">
+            Создаем канал привлечения новых клиентов
+          </div>
+        </div>
+        <div class="card bottom__card">
+          <div class="card__img-container bottom__card-img-container">
+            <img src="./img/icons/money-round.svg" alt="card-image" class="card-img bottom__card-img">
+          </div>
+          <div class="text card__text bottom__card-text">
+            Помогаем увеличить выручку путем запуска нового продукта
+          </div>
+        </div>
+        <div class="card bottom__card">
+          <div class="card__img-container bottom__card-img-container">
+            <img src="./img/icons/user.svg" alt="card-image" class="card-img bottom__card-img">
+          </div>
+          <div class="text card__text bottom__card-text">
+            Повышаем лояльность действующих клиентов
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 </body>
 
 </html>

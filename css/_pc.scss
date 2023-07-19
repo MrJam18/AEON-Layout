@@ -1,0 +1,138 @@
+@media (min-width: 1100px) {
+  .container {
+    max-width: 1144px;
+    padding: 0 60px;
+  }
+  .top {
+    height: 665px;
+  }
+  .top__language {
+    margin-left: 20px;
+  }
+  .top__logo {
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 130%;
+  }
+  .top__text {
+    font-size: 22px;
+    font-weight: 350;
+    line-height: 130%;
+    width: 350px;
+  }
+  .button {
+    width: 199px;
+    height: 52px;
+    font-size: 18px;
+    font-weight: 450;
+    line-height: 140%;
+  }
+  .top__phone-image-container {
+    width: 50%;
+  }
+  .top__phone-image {
+    width: 740px;
+    height: 685px;
+    left: -50px;
+    top: -50px;
+  }
+  .top__content-flex-box {
+    justify-content: space-between;
+  }
+  .card {
+    width: 241px;
+    height: 118px;
+    padding: 22px 20px 0;
+  }
+  .top__cards {
+    max-width: 1024px;
+    bottom: -34px;
+  }
+  .card__text {
+    width: 150px;
+    padding: 0;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 140%;
+  }
+  .card__img-container {
+    top: 15px;
+    right: 18px;
+    left: auto;
+  }
+  .br-span {
+    margin-right: 100px;
+  }
+  .bottom__header {
+    font-size: 38px;
+    font-weight: 500;
+    line-height: 130%; /* 49.4px */
+    letter-spacing: -1.14px;
+    margin-top: 150px;
+  }
+  .bottom__blue-cards {
+    margin-top: 28px;
+  }
+  .bottom__blue-card {
+    width: 502px;
+    height: 328px;
+  }
+  .bottom__blue-card-header {
+    font-size: 20px;
+  }
+  .bottom__blue-card-text-container {
+    width: 200px;
+  }
+  .bottom__blue-card-text {
+    font-weight: 400;
+    line-height: 140%;
+    font-size: 15px;
+  }
+  .br-span_blue-card {
+    margin-right: 20px;
+  }
+  .bottom__blue-card-img {
+    width: 255px;
+    right: 11px;
+    bottom: -8px;
+    height: auto;
+  }
+  .bottom__flex-box {
+    margin-top: 114px;
+  }
+  .bottom__left-content-header {
+    margin-top: 0;
+    font-size: 38px;
+    line-height: 130%; /* 49.4px */
+    letter-spacing: -1.14px;
+  }
+  .bottom__broker-text {
+    width: 405px;
+    font-weight: 500;
+  }
+  .bottom__card {
+    width: 231px;
+    height: 140px;
+    margin-top: 0;
+    padding: 70px 10px 30px 26px;
+  }
+  .bottom__card-img {
+    position: absolute;
+    width: 40px;
+    right: 5px;
+    bottom: 3px;
+  }
+  .bottom__card-img-container {
+    padding: 0;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: 30px;
+    top: 17px;
+    right: auto;
+  }
+  .bottom__card-text {
+    width: 231px;
+  }
+}

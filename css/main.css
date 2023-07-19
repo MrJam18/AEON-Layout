@@ -1,263 +1,484 @@
-/*! HTML5 Boilerplate v8.0.0 | MIT License | https://html5boilerplate.com/ */
-
-/* main.css 2.1.0 | MIT License | https://github.com/h5bp/main.css#readme */
-/*
- * What follows is the result of much research on cross-browser styling.
- * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
- * Kroc Camen, and the H5BP dev community and team.
- */
-
-/* ==========================================================================
-   Base styles: opinionated defaults
-   ========================================================================== */
-
-html {
-  color: #222;
-  font-size: 1em;
-  line-height: 1.4;
-}
-
-/*
- * Remove text-shadow in selection highlight:
- * https://twitter.com/miketaylr/status/12228805301
- *
- * Vendor-prefixed and regular ::selection selectors cannot be combined:
- * https://stackoverflow.com/a/16982510/7133471
- *
- * Customize the background color to match your design.
- */
-
-::-moz-selection {
-  background: #b3d4fc;
-  text-shadow: none;
-}
-
-::selection {
-  background: #b3d4fc;
-  text-shadow: none;
-}
-
-/*
- * A better looking default horizontal rule
- */
-
-hr {
-  display: block;
-  height: 1px;
-  border: 0;
-  border-top: 1px solid #ccc;
-  margin: 1em 0;
-  padding: 0;
-}
-
-/*
- * Remove the gap between audio, canvas, iframes,
- * images, videos and the bottom of their containers:
- * https://github.com/h5bp/html5-boilerplate/issues/440
- */
-
-audio,
-canvas,
-iframe,
-img,
-svg,
-video {
-  vertical-align: middle;
-}
-
-/*
- * Remove default fieldset styles.
- */
-
-fieldset {
-  border: 0;
+h1, h2, h3, h4, h5, h6 {
   margin: 0;
   padding: 0;
 }
 
-/*
- * Allow only vertical resizing of textareas.
- */
-
-textarea {
-  resize: vertical;
+* {
+  box-sizing: border-box;
 }
 
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
-
-/* ==========================================================================
-   Helper classes
-   ========================================================================== */
-
-/*
- * Hide visually and from screen readers
- */
-
-.hidden,
-[hidden] {
-  display: none !important;
+.text {
+  font-family: Inter, sans-serif;
+  color: black;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 350;
+  line-height: 130%;
 }
 
-/*
- * Hide only visually, but have it available for screen readers:
- * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
- *
- * 1. For long content, line feeds are not interpreted as spaces and small width
- *    causes content to wrap 1 word per line:
- *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
- */
-
-.sr-only {
+.button {
+  border-radius: 8px;
+  background: #0962E8;
+  width: 100%;
+  height: 52px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
   border: 0;
-  clip: rect(0, 0, 0, 0);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
+  text-align: center;
+  font-family: Inter, sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%;
+}
+
+.container {
+  max-width: 343px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.top {
+  width: 100%;
+  background-color: #cbecff;
+  overflow-x: clip;
+  position: relative;
+}
+
+.top__languages-block {
+  width: 100%;
+  display: flex;
+  justify-content: right;
+  padding-top: 24px;
+}
+
+.top__language {
+  margin-left: 15px;
+  font-family: Inter, sans-serif;
+  border-radius: 12px;
+  padding: 2px 4px;
+  text-align: center;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+  cursor: pointer;
+}
+
+.top__language_selected {
+  background-color: white;
+  color: #0962E8;
+}
+
+.top__phone-image-container {
+  position: relative;
+  width: 100%;
+  height: 408px;
+}
+
+.top__phone-image {
   position: absolute;
-  white-space: nowrap;
-  width: 1px;
-  /* 1 */
+  width: 558px;
+  height: 500px;
+  top: -40px;
+  left: -35px;
 }
 
-/*
- * Extends the .sr-only class to allow the element
- * to be focusable when navigated to via the keyboard:
- * https://www.drupal.org/node/897638
- */
-
-.sr-only.focusable:active,
-.sr-only.focusable:focus {
-  clip: auto;
-  height: auto;
-  margin: 0;
-  overflow: visible;
-  position: static;
-  white-space: inherit;
-  width: auto;
+.top__logo {
+  display: flex;
+  font-family: Inter, sans-serif;
+  font-size: 42px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 123%;
 }
 
-/*
- * Hide visually and from screen readers, but maintain layout
- */
-
-.invisible {
-  visibility: hidden;
+.top__logo-kit {
+  margin-left: 5px;
+  padding: 0 15px 0 8px;
+  background-color: white;
+  border-radius: 10px;
+  color: #0962E8;
 }
 
-/*
- * Clearfix: contain floats
- *
- * For modern browsers
- * 1. The space content is one way to avoid an Opera bug when the
- *    `contenteditable` attribute is included anywhere else in the document.
- *    Otherwise it causes space to appear at the top and bottom of elements
- *    that receive the `clearfix` class.
- * 2. The use of `table` rather than `block` is only necessary if using
- *    `:before` to contain the top-margins of child elements.
- */
-
-.clearfix::before,
-.clearfix::after {
-  content: " ";
-  display: table;
+.top__text {
+  margin-top: 12px;
+  width: 98%;
+  font-size: 16px;
 }
 
-.clearfix::after {
-  clear: both;
+.top__demo-button {
+  margin-top: 10px;
 }
 
-/* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
-   These examples override the primary ('mobile first') styles.
-   Modify as content requires.
-   ========================================================================== */
-
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+.top__cards {
+  margin-top: 2px;
+  margin-bottom: 33px;
 }
 
-@media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
+.cards {
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
 }
 
-/* ==========================================================================
-   Print styles.
-   Inlined to avoid the additional HTTP request:
-   https://www.phpied.com/delay-loading-your-print-css/
-   ========================================================================== */
+.card {
+  position: relative;
+  width: 164px;
+  min-height: 118px;
+  border-radius: 20px;
+  background: #FFF;
+  box-shadow: 6px 4px 12px 0 rgba(0, 0, 0, 0.05);
+  margin-top: 20px;
+  max-height: 134px;
+}
 
-@media print {
-  *,
-  *::before,
-  *::after {
-    background: #fff !important;
-    color: #000 !important;
-    /* Black prints faster */
-    box-shadow: none !important;
-    text-shadow: none !important;
+.card__text {
+  padding: 48px 11px 16px 18px;
+  font-style: normal;
+  font-weight: 450;
+}
+
+.card__img-container {
+  position: absolute;
+  background-color: #EFF9FF;
+  border-radius: 50%;
+  padding: 8px 8px 5px;
+  left: 18px;
+  top: -5px;
+}
+
+.bottom {
+  width: 100%;
+  background-color: #FFFFFF;
+}
+
+.bottom__header {
+  color: #29374E;
+  text-align: center;
+  font-family: Inter, sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 130%; /* 31.2px */
+  letter-spacing: -0.72px;
+  margin-top: 40px;
+}
+
+.bottom__header_blue {
+  color: #0962E8;
+}
+
+.bottom__blue-cards {
+  margin-top: 8px;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
+}
+
+.bottom__blue-card {
+  margin: 16px auto 0;
+  width: 100%;
+  height: 215px;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 30px;
+  background: #E9F6FF;
+  padding: 25px 20px 0 16px;
+  position: relative;
+}
+
+.bottom__blue-card-header {
+  color: #29374E;
+  font-family: Inter, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%;
+}
+
+.bottom__blue-card-text {
+  font-size: 13px;
+  line-height: 140%;
+}
+
+.bottom__blue-card-text-container {
+  width: 162px;
+}
+
+.bottom__blue-card-img {
+  position: absolute;
+  width: 155px;
+  height: 210px;
+  right: 5px;
+  bottom: -5px;
+}
+
+.bottom__broker-text {
+  margin-top: 5px;
+  text-align: center;
+  font-weight: 450;
+  line-height: 140%;
+}
+
+.bottom__demo-button {
+  margin-top: 12px;
+}
+
+.bottom__cards {
+  margin-top: 17px;
+  margin-bottom: 50px;
+}
+
+@media (min-width: 800px) {
+  .top {
+    height: 640px;
   }
-
-  a,
-  a:visited {
-    text-decoration: underline;
+  .button {
+    width: 199px;
+    height: 52px;
+    border-right: 8px;
+    font-size: 18px;
+    font-weight: 450;
+    line-height: 140%;
   }
-
-  a[href]::after {
-    content: " (" attr(href) ")";
+  .container {
+    max-width: 900px;
+    padding: 0 50px;
   }
-
-  abbr[title]::after {
-    content: " (" attr(title) ")";
+  .top__phone-image {
+    width: 600px;
+    height: 550px;
+    right: 0;
   }
-
-  /*
-   * Don't show links that are fragment identifiers,
-   * or use the `javascript:` pseudo protocol
-   */
-  a[href^="#"]::after,
-  a[href^="javascript:"]::after {
-    content: "";
+  .top__content-flex-box {
+    display: flex;
+    flex-direction: row-reverse;
   }
-
-  pre {
-    white-space: pre-wrap !important;
+  .top__left-content {
+    margin-top: 78px;
   }
-
-  pre,
-  blockquote {
-    border: 1px solid #999;
-    page-break-inside: avoid;
+  .top__logo {
+    font-size: 50px;
+    font-weight: 650;
+    line-height: 130%;
   }
-
-  /*
-   * Printing Tables:
-   * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
-   */
-  thead {
-    display: table-header-group;
+  .top__text {
+    margin-top: 14px;
+    font-size: 18px;
+    line-height: 130%;
+    width: 300px;
   }
-
-  tr,
-  img {
-    page-break-inside: avoid;
+  .top__demo-button {
+    margin-top: 38px;
   }
-
-  p,
-  h2,
-  h3 {
-    orphans: 3;
-    widows: 3;
+  .top__phone-image {
+    left: 20px;
   }
-
-  h2,
-  h3 {
-    page-break-after: avoid;
+  .top__cards {
+    position: absolute;
+    bottom: -40px;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  .card {
+    width: 180px;
+    min-height: 118px;
+  }
+  .bottom__header {
+    margin: 115px auto 0;
+    font-size: 30px;
+    line-height: 130%;
+    letter-spacing: -1.14px;
+    width: 500px;
+  }
+  .bottom__blue-card {
+    width: 390px;
+    height: 280px;
+    padding: 30px 30px 0 18px;
+    border-radius: 26px;
+  }
+  .bottom__blue-card-header {
+    font-size: 18px;
+  }
+  .bottom__blue-card-text {
+    margin-top: 12px;
+  }
+  .bottom__blue-card-img {
+    bottom: -7px;
+    width: 200px;
+    height: 280px;
+  }
+  .bottom__flex-box {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+  }
+  .bottom__left-content {
+    width: 50%;
+  }
+  .bottom__left-content-header {
+    width: 100%;
+    text-align: left;
+    margin: 0;
+  }
+  .bottom__cards {
+    width: 50%;
+    margin-top: 0;
+  }
+  .bottom__broker-text {
+    text-align: left;
+    margin-top: 21px;
+    width: 350px;
+  }
+  .bottom__demo-button {
+    margin-top: 37px;
+    width: 180px;
+  }
+  .bottom__card {
+    box-shadow: unset;
+  }
+}
+@media (min-width: 1100px) {
+  .container {
+    max-width: 1144px;
+    padding: 0 60px;
+  }
+  .top {
+    height: 665px;
+  }
+  .top__language {
+    margin-left: 20px;
+  }
+  .top__logo {
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 130%;
+  }
+  .top__text {
+    font-size: 22px;
+    font-weight: 350;
+    line-height: 130%;
+    width: 350px;
+  }
+  .button {
+    width: 199px;
+    height: 52px;
+    font-size: 18px;
+    font-weight: 450;
+    line-height: 140%;
+  }
+  .top__phone-image-container {
+    width: 50%;
+  }
+  .top__phone-image {
+    width: 740px;
+    height: 685px;
+    left: -50px;
+    top: -50px;
+  }
+  .top__content-flex-box {
+    justify-content: space-between;
+  }
+  .card {
+    width: 241px;
+    height: 118px;
+    padding: 22px 20px 0;
+  }
+  .top__cards {
+    max-width: 1024px;
+    bottom: -34px;
+  }
+  .card__text {
+    width: 150px;
+    padding: 0;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 140%;
+  }
+  .card__img-container {
+    top: 15px;
+    right: 18px;
+    left: auto;
+  }
+  .br-span {
+    margin-right: 100px;
+  }
+  .bottom__header {
+    font-size: 38px;
+    font-weight: 500;
+    line-height: 130%; /* 49.4px */
+    letter-spacing: -1.14px;
+    margin-top: 150px;
+  }
+  .bottom__blue-cards {
+    margin-top: 28px;
+  }
+  .bottom__blue-card {
+    width: 502px;
+    height: 328px;
+  }
+  .bottom__blue-card-header {
+    font-size: 20px;
+  }
+  .bottom__blue-card-text-container {
+    width: 200px;
+  }
+  .bottom__blue-card-text {
+    font-weight: 400;
+    line-height: 140%;
+    font-size: 15px;
+  }
+  .br-span_blue-card {
+    margin-right: 20px;
+  }
+  .bottom__blue-card-img {
+    width: 255px;
+    right: 11px;
+    bottom: -8px;
+    height: auto;
+  }
+  .bottom__flex-box {
+    margin-top: 114px;
+  }
+  .bottom__left-content-header {
+    margin-top: 0;
+    font-size: 38px;
+    line-height: 130%; /* 49.4px */
+    letter-spacing: -1.14px;
+  }
+  .bottom__broker-text {
+    width: 405px;
+    font-weight: 500;
+  }
+  .bottom__card {
+    width: 231px;
+    height: 140px;
+    margin-top: 0;
+    padding: 70px 10px 30px 26px;
+  }
+  .bottom__card-img {
+    position: absolute;
+    width: 40px;
+    right: 5px;
+    bottom: 3px;
+  }
+  .bottom__card-img-container {
+    padding: 0;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: 30px;
+    top: 17px;
+    right: auto;
+  }
+  .bottom__card-text {
+    width: 231px;
   }
 }
 
+/*# sourceMappingURL=main.css.map */

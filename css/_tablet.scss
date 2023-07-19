@@ -1,0 +1,111 @@
+@media (min-width: 800px) {
+  .top {
+    height: 640px;
+  }
+  .button {
+    width: 199px;
+    height: 52px;
+    border-right: 8px;
+    font-size: 18px;
+    font-weight: 450;
+    line-height: 140%;
+  }
+  .container {
+    max-width: 900px;
+    padding: 0 50px;
+  }
+  .top__phone-image {
+    width: 600px;
+    height: 550px;
+    right: 0;
+  }
+  .top__content-flex-box {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .top__left-content {
+    margin-top: 78px;
+  }
+  .top__logo {
+    font-size: 50px;
+    font-weight: 650;
+    line-height: 130%;
+  }
+  .top__text {
+    margin-top: 14px;
+    font-size: 18px;
+    line-height: 130%;
+    width: 300px;
+  }
+  .top__demo-button {
+    margin-top: 38px;
+  }
+  .top__phone-image {
+    left: 20px;
+  }
+  .top__cards {
+    position: absolute;
+    bottom: -40px;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  .card {
+    width: 180px;
+    min-height: 118px;
+  }
+  .bottom__header {
+    margin: 115px auto 0;
+    //margin-top: 115px;
+    font-size: 30px;
+    line-height: 130%;
+    letter-spacing: -1.14px;
+    width: 500px;
+  }
+  .bottom__blue-card {
+    width: 390px;
+    height: 280px;
+    padding: 30px 30px 0 18px;
+    border-radius: 26px;
+  }
+  .bottom__blue-card-header {
+    font-size: 18px;
+  }
+  .bottom__blue-card-text {
+    margin-top: 12px;
+  }
+  .bottom__blue-card-img {
+    bottom: -7px;
+    width: 200px;
+    height: 280px;
+  }
+  .bottom__flex-box {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+  }
+  .bottom__left-content {
+    width: 50%;
+  }
+  .bottom__left-content-header {
+    width: 100%;
+    text-align: left;
+    margin: 0;
+  }
+  .bottom__cards {
+    width: 50%;
+    margin-top: 0;
+  }
+  .bottom__broker-text {
+    text-align: left;
+    margin-top: 21px;
+    width: 350px;
+  }
+  .bottom__demo-button {
+    margin-top: 37px;
+    width: 180px;
+  }
+  .bottom__card {
+    box-shadow: unset;
+  }
+}
